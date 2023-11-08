@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>com.andrei.oa</id>
+    <name>Oa Plugin</name>
+    <vendor>Andrei</vendor>
+    <description><![CDATA[
+    Hello World Plugin
+  ]]></description>
+    <depends>com.intellij.modules.platform</depends>
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+    <actions>
+        <action class="com.andrei.oa.HelloDialogAction"
+                text="Hello World!"
+                description="Hello popup">
+            <add-to-group group-id="ToolsMenu" anchor="first"/>
+            <keyboard-shortcut first-keystroke="control alt H" keymap="$default"/>
+        </action>
+    </actions>
+</idea-plugin>
